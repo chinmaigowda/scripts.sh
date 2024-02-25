@@ -2,7 +2,7 @@
 #!/bin/bash 
 var=0
 
-while [[ $var -le 10 ]]
+while [[ $var -le 9 ]]
 do 
     ((var++))
     echo $var
