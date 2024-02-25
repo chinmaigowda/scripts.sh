@@ -7,7 +7,7 @@ read -p "Enter the directory path: " dir
 cd $dir
 timestamp=$(date +"%Y%m%d%H%M%S")
 
-for file in $*
+for file in *
 do
    new_filename="$timestamp_$file"
    mv "$file" "$new_filename"
