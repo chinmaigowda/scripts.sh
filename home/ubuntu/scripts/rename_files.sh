@@ -9,7 +9,7 @@ timestamp=$(date +"%Y%m%d%H%M%S")
 
 for file in *
 do
-   new_filename="$timestamp_$file"
+   new_filename="${timestamp}_${file}"
    mv "$file" "$new_filename"
 done
 
