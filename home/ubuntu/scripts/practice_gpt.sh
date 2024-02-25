@@ -8,6 +8,7 @@ read -p "Enter the directory path: " dir
 
 if [[ -d $dir ]]; then
     file_count=$(find $dir -maxdepth 1 -type f | wc -l)
+#-maxdepth is used to only consider only directories and not subdirectories
     echo "Number of files in $dir is $file_count"
 else
     echo "Pass the directory path properly: $dir"
