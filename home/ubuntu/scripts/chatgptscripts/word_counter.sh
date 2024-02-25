@@ -2,11 +2,9 @@
 
 #!/bin/bash
 
-read -p "Enter file name: " file
+file=$1
 
 while read line
-do
-      words=$("$line" | wc -l) 
-      echo "The number of words in $line is $words"
-      ((line++))
-done
+do 
+      echo "The number of words are: $(echo $line | wc -w)"
+done < $file
